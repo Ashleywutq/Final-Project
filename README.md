@@ -1,2 +1,3 @@
 # Final-Project
-I don't know what to do yet!
+
+This is the final project for PIC_10C Fall 2017
