@@ -32,6 +32,10 @@ Game::Game(QWidget *parent) :
 Game::~Game()
 {
     delete ui;
+    while(notes.size()!=0){
+        delete notes.front();
+        notes.pop();
+    }
 }
 
 void Game::createNote(){
