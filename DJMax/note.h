@@ -15,6 +15,7 @@ public:
     Note(int pos, QGraphicsScene *parent,std::queue<Note*>& notes);
     int x;
     int y;
+    int type;
 
 
 public slots:

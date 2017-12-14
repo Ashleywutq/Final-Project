@@ -38,7 +38,6 @@ void Game::createNote(){
     int position = rand()%4;
     Note *mynote= new Note(position, scene, notes);
     notes.push(mynote);
-
     return;
 }
 
@@ -64,27 +63,27 @@ void Game::updatescoregrade(int y){
 }
 
 
-void Game::keyPressEvent(QKeyEvent * event){
-    ui->label_2->setText("presse");
+void Game::keyPressEvent(QKeyEvent *event){
+
 
     if(notes.size()==0){return;}
 
     bool missed = true;
 
     if (event->key() == Qt::Key_D){
-        if(notes.front()->x==0){
+        if(notes.front()->type==0){
             missed = false;
         }
     } else if (event->key() == Qt::Key_F){
-        if(notes.front()->x==1){
+        if(notes.front()->type==1){
             missed = false;
         }
     } else if (event->key() == Qt::Key_J){
-        if(notes.front()->x==2){
+        if(notes.front()->type==2){
             missed = false;
         }
     } else if (event->key() == Qt::Key_K){
-        if(notes.front()->x==3){
+        if(notes.front()->type==3){
             missed = false;
         }
     }

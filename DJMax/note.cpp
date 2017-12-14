@@ -2,7 +2,7 @@
 #include <QTimer>
 #include <QKeyEvent>
 
-Note::Note(int pos,QGraphicsScene *ptr, std::queue<Note*>& notes):notesinparent(notes),x(pos*60),y(0){
+Note::Note(int pos,QGraphicsScene *ptr, std::queue<Note*>& notes):notesinparent(notes),type(pos),x(pos*60),y(0){
 
 
     QBrush blackbrush (Qt::black);

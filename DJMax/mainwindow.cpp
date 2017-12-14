@@ -19,6 +19,7 @@ void MainWindow::show_instruction(){
         "Instructions",
         "Instructions <br /><br />"
         "This is a demo game of DJMax.<br />"
+        "Press \"D\" \"F\" \"j\" \"K\".<br />"
         "Hit the notes when they hit the bar<br /> " );
 
 }
@@ -26,6 +27,7 @@ void MainWindow::show_instruction(){
 void MainWindow::start_game(){
     game= new Game(this);
     this->setCentralWidget(game);
+    game->setFocus();
 }
 
 

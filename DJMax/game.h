@@ -35,7 +35,6 @@ private:
 
     void updatemissgrade();
     void updatescoregrade(int y);
-
     void keyPressEvent(QKeyEvent * event);
 
 };
