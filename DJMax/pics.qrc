@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/new/images">
+        <file>DJMax.jpg</file>
+        <file>grid.jpeg</file>
+    </qresource>
+</RCC>
